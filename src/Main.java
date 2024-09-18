@@ -1,8 +1,8 @@
 class Book {
 
-    private String title;
-    private String author;
-    private String ISBN;
+    private final String title;
+    private final String author;
+    private final String ISBN;
     private int price;
 
     public Book(){
@@ -27,7 +27,7 @@ class Book {
     }
 
 
-    public void applyDiscount(double discount) {
+    public void applyDiscount(int discount) {
         price -= price * (discount / 100);
     }
 
